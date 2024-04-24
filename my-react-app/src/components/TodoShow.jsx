@@ -10,7 +10,7 @@ export default function TodoShow() {
         todos.map((todo) => {
           return (
 
-            <div style={{ marginBottom: '10px' }}>
+            <div key={todo.id} style={{ marginBottom: '10px' }}>
               <TodoItem  id={todo.id} todo={todo} />
             </div>
           )
